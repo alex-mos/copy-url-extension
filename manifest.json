@@ -21,12 +21,10 @@
   "icons": {
     "128": "assets/img/icon.png"
   },
-  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDngbrX5GEfUYuT9AsphPJp/PlHgAtryMm6w04TtfFPXo5zcyZ1FKe+jgUHMZpmdWk6eiUxiD4u/69D3Wm40PH5sd9Kup4g4VOw8j5ob/ldS2S8DX4yP4gnhrXEmOURZWL91zbwXqKbNyhgGRZyMC3EXkGZU+x/x1gkQZMPSc1l9wIDAQAB",
   "manifest_version": 2,
   "name": "__MSG_name__",
   "options_page": "options.html",
   "options_ui": {
-    "chrome_style": true,
     "page": "options.html"
   },
   "page_action": {
@@ -42,10 +40,8 @@
     "tabs",
     "alarms",
     "webRequest",
-    "webRequestBlocking",
-    "*://*/*"
+    "webRequestBlocking"
   ],
   "short_name": "copyurl",
-  "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "1.0.0"
 }
