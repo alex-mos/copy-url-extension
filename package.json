@@ -11,6 +11,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "husky": "^7.0.2"
   }
 }
