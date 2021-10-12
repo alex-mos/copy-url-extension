@@ -6,13 +6,13 @@
       "message": "Copier l’URL"
    },
    "description": {
-      "message": "COPY URL est une extension qui vous permet de copier le contenu des URL avec caractères spéciaux comme une alphabets national"
+      "message": "Copy URL est une extension qui vous permet de copier le contenu des URL avec caractères spéciaux comme une alphabets national"
    },
    "hide_menu": {
       "message": "Masquer l'élément dans le menu contextuel"
    },
    "name": {
-      "message": "COPY URL"
+      "message": "Copy URL"
    },
    "notify_text": {
       "message": "Aimez vous notre extension? Merci de nous donnez votre avis."

@@ -6,13 +6,13 @@
       "message": "URLをコピーしてください。"
    },
    "description": {
-      "message": "URLを、正しくコピーする拡張機能です。 COPY URLは、ロシア語、アラビア語、フランス語、日本語や他の言語のURLをコピーすることができます。(※)"
+      "message": "URLを、正しくコピーする拡張機能です。 Copy URLは、ロシア語、アラビア語、フランス語、日本語や他の言語のURLをコピーすることができます。(※)"
    },
    "hide_menu": {
       "message": "コンテキストメニューの項目を非表示にする"
    },
    "name": {
-      "message": "COPY URL"
+      "message": "Copy URL"
    },
    "notify_text": {
       "message": "気に入っていただけましたか？私達にフィードバックをお願いします！"
