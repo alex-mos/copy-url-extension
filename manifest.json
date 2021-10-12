@@ -1,43 +1,54 @@
 {
-   "background": {
-      "scripts": [ "assets/js/punycode.js", "assets/js/background.js" ]
-   },
-   "commands": {
-      "_execute_page_action": {
-         "suggested_key": {
-            "default": "Alt+X"
-         }
+  "background": {
+    "scripts": ["assets/js/punycode.js", "assets/js/background.js"]
+  },
+  "commands": {
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Alt+X"
       }
-   },
-   "content_scripts": [ {
-      "js": [ "assets/js/content.js" ],
-      "matches": [ "\u003Call_urls>" ],
+    }
+  },
+  "content_scripts": [
+    {
+      "js": ["assets/js/content.js"],
+      "matches": ["\u003Call_urls>"],
       "run_at": "document_start"
-   } ],
-   "default_locale": "en",
-   "description": "__MSG_description__",
-   "icons": {
-      "128": "assets/img/icon128.png",
-      "16": "assets/img/icon16.png",
-      "48": "assets/img/icon48.png"
-   },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDngbrX5GEfUYuT9AsphPJp/PlHgAtryMm6w04TtfFPXo5zcyZ1FKe+jgUHMZpmdWk6eiUxiD4u/69D3Wm40PH5sd9Kup4g4VOw8j5ob/ldS2S8DX4yP4gnhrXEmOURZWL91zbwXqKbNyhgGRZyMC3EXkGZU+x/x1gkQZMPSc1l9wIDAQAB",
-   "manifest_version": 2,
-   "name": "__MSG_name__",
-   "options_page": "options.html",
-   "options_ui": {
-      "chrome_style": true,
-      "page": "options.html"
-   },
-   "page_action": {
-      "default_icon": {
-         "19": "assets/img/icon.png",
-         "38": "assets/img/icon.png"
-      },
-      "default_title": "__MSG_button_title__"
-   },
-   "permissions": [ "storage", "contextMenus", "clipboardWrite", "tabs", "alarms", "webRequest", "webRequestBlocking", "*://*/*" ],
-   "short_name": "copyurl",
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.9.2"
+    }
+  ],
+  "default_locale": "en",
+  "description": "__MSG_description__",
+  "icons": {
+    "128": "assets/img/icon128.png",
+    "16": "assets/img/icon16.png",
+    "48": "assets/img/icon48.png"
+  },
+  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDngbrX5GEfUYuT9AsphPJp/PlHgAtryMm6w04TtfFPXo5zcyZ1FKe+jgUHMZpmdWk6eiUxiD4u/69D3Wm40PH5sd9Kup4g4VOw8j5ob/ldS2S8DX4yP4gnhrXEmOURZWL91zbwXqKbNyhgGRZyMC3EXkGZU+x/x1gkQZMPSc1l9wIDAQAB",
+  "manifest_version": 2,
+  "name": "__MSG_name__",
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "page_action": {
+    "default_icon": {
+      "19": "assets/img/icon.png",
+      "38": "assets/img/icon.png"
+    },
+    "default_title": "__MSG_button_title__"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "clipboardWrite",
+    "tabs",
+    "alarms",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "short_name": "copyurl",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.9.2"
 }

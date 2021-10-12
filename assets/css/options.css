@@ -9,21 +9,21 @@
   position: absolute;
   left: -9999px;
 }
-[type="checkbox"]:not(:checked)+label,
-[type="checkbox"]:checked+label {
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
   position: relative;
   line-height: 32px;
   display: block;
   padding: 0 8px 0 32px;
   cursor: pointer;
 }
-[type="checkbox"]:checked+label {
+[type="checkbox"]:checked + label {
   opacity: 0.9;
   color: #333;
 }
-[type="checkbox"]:not(:checked)+label:before,
-[type="checkbox"]:checked+label:before {
-  content: '';
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: "";
   position: absolute;
   left: 8px;
   top: 8px;
@@ -35,9 +35,9 @@
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-[type="checkbox"]:not(:checked)+label:after,
-[type="checkbox"]:checked+label:after {
-  content: '';
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "";
   position: absolute;
   top: 10px;
   left: 13px;
@@ -56,7 +56,7 @@
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
-[type="checkbox"]:not(:checked)+label:after {
+[type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   -webkit-transform: scale(0) rotate(45deg);
   -moz-transform: scale(0) rotate(45deg);
@@ -64,7 +64,7 @@
   -o-transform: scale(0) rotate(45deg);
   transform: scale(0) rotate(45deg);
 }
-[type="checkbox"]:checked+label:after {
+[type="checkbox"]:checked + label:after {
   opacity: 1;
   -webkit-transform: scale(1) rotate(45deg);
   -moz-transform: scale(1) rotate(45deg);

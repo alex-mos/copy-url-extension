@@ -1,20 +1,20 @@
 {
-   "button_title": {
-      "message": "Appuyez sur le bouton pour copier les adresse au clipoard"
-   },
-   "context_title": {
-      "message": "Copier l’URL"
-   },
-   "description": {
-      "message": "Copy URL est une extension qui vous permet de copier le contenu des URL avec caractères spéciaux comme une alphabets national"
-   },
-   "hide_menu": {
-      "message": "Masquer l'élément dans le menu contextuel"
-   },
-   "name": {
-      "message": "Copy URL"
-   },
-   "notify_text": {
-      "message": "Aimez vous notre extension? Merci de nous donnez votre avis."
-   }
+  "button_title": {
+    "message": "Appuyez sur le bouton pour copier les adresse au clipoard"
+  },
+  "context_title": {
+    "message": "Copier l’URL"
+  },
+  "description": {
+    "message": "Copy URL est une extension qui vous permet de copier le contenu des URL avec caractères spéciaux comme une alphabets national"
+  },
+  "hide_menu": {
+    "message": "Masquer l'élément dans le menu contextuel"
+  },
+  "name": {
+    "message": "Copy URL"
+  },
+  "notify_text": {
+    "message": "Aimez vous notre extension? Merci de nous donnez votre avis."
+  }
 }

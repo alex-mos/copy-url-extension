@@ -2,8 +2,15 @@
   "name": "copyurl",
   "version": "1.0.0",
   "description": "Extension for the correct copying of URL address. COPY URL allows to copy URL addresses containing characters of national alphabets.",
+  "scripts": {
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
+  },
   "main": "manifest.json",
   "author": "Alexander Mospan <alexander.mospan@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
 }
