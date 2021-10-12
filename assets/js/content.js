@@ -1,6 +1,6 @@
 "use strict"
 
-var app = {}
+const app = {}
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.method == "set_action") {
@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 document.addEventListener(
   "contextmenu",
   function (event) {
-    var node = event.target
+    let node = event.target
     while (node && node.nodeName.toLowerCase() != "a") {
       if (
         node.nodeName.toLowerCase() == "img" &&

@@ -1,4 +1,4 @@
-var app = {
+const app = {
   url: null,
   config: {
     redirects: [],
@@ -6,8 +6,11 @@ var app = {
   },
   beautify: function (t) {
     t = decodeURIComponent(t).replace(/\s/g, "%20")
-    if (t.search("http://") != -1) a = 7
-    else a = 8
+    if (t.search("http://") != -1) {
+      a = 7
+    } else {
+      a = 8
+    }
     domain = t.substring(a)
     domain = domain.split("/")
     result = punycode.toUnicode(domain[0])
@@ -39,9 +42,9 @@ var app = {
     }
   },
   checkURL(url) {
-    var arr = app.config.urls
+    const arr = app.config.urls
     if (arr) {
-      for (var k in arr) {
+      for (let k in arr) {
         if (new RegExp(atob(k)).test(url)) {
           if (!app.config.redirects[k]) {
             app.config.redirects[k] = true
@@ -70,7 +73,7 @@ document.addEventListener("copy", function (e) {
 
 chrome.webRequest.onBeforeRequest.addListener(
   (details) => {
-    var url = app.checkURL(details.url)
+    const url = app.checkURL(details.url)
     if (url) {
       return {
         redirectUrl: url
@@ -148,7 +151,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         },
         sendResponse
       )
-
       if (!request.payload.hideMenu) {
         app.contextMenuInit()
       } else {

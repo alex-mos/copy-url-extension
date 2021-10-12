@@ -4,11 +4,13 @@
   line-height: 32px;
   cursor: pointer;
 }
+
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
 }
+
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
   position: relative;
@@ -17,10 +19,12 @@
   padding: 0 8px 0 32px;
   cursor: pointer;
 }
+
 [type="checkbox"]:checked + label {
   opacity: 0.9;
   color: #333;
 }
+
 [type="checkbox"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before {
   content: "";
@@ -31,10 +35,9 @@
   height: 14px;
   background: #fff;
   border: 1px solid #dedede;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
 }
+
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
   content: "";
@@ -46,29 +49,16 @@
   height: 8px;
   border: solid #000;
   border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
-  -webkit-transform: scale(0) rotate(45deg);
-  -moz-transform: scale(0) rotate(45deg);
-  -ms-transform: scale(0) rotate(45deg);
-  -o-transform: scale(0) rotate(45deg);
   transform: scale(0) rotate(45deg);
 }
+
 [type="checkbox"]:checked + label:after {
   opacity: 1;
-  -webkit-transform: scale(1) rotate(45deg);
-  -moz-transform: scale(1) rotate(45deg);
-  -ms-transform: scale(1) rotate(45deg);
-  -o-transform: scale(1) rotate(45deg);
   transform: scale(1) rotate(45deg);
 }

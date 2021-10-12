@@ -19,9 +19,7 @@
   "default_locale": "en",
   "description": "__MSG_description__",
   "icons": {
-    "128": "assets/img/icon128.png",
-    "16": "assets/img/icon16.png",
-    "48": "assets/img/icon48.png"
+    "128": "assets/img/icon.png"
   },
   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDngbrX5GEfUYuT9AsphPJp/PlHgAtryMm6w04TtfFPXo5zcyZ1FKe+jgUHMZpmdWk6eiUxiD4u/69D3Wm40PH5sd9Kup4g4VOw8j5ob/ldS2S8DX4yP4gnhrXEmOURZWL91zbwXqKbNyhgGRZyMC3EXkGZU+x/x1gkQZMPSc1l9wIDAQAB",
   "manifest_version": 2,
@@ -33,8 +31,7 @@
   },
   "page_action": {
     "default_icon": {
-      "19": "assets/img/icon.png",
-      "38": "assets/img/icon.png"
+      "128": "assets/img/icon.png"
     },
     "default_title": "__MSG_button_title__"
   },
@@ -50,5 +47,5 @@
   ],
   "short_name": "copyurl",
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "1.9.2"
+  "version": "1.0.0"
 }
