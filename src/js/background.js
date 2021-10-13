@@ -1,21 +1,30 @@
-const app = {
+const punycode = require("punycode")
+
+function beautify(url) {
+  console.log("url")
+  console.log(url)
+  url = decodeURIComponent(url).replace(/\s/g, "%20")
+  if (url.search("http://") != -1) {
+    a = 7
+  } else {
+    a = 8
+  }
+  domain = url.substring(a)
+  domain = domain.split("/")
+  console.log("domain[0]")
+  console.log(domain[0])
+  result = punycode.toUnicode(domain[0])
+  console.log("result")
+  console.log(result)
+  url = url.replace(domain[0], result)
+  return url
+}
+
+app = {
   url: null,
   config: {
     redirects: [],
     version: 0
-  },
-  beautify: function (t) {
-    t = decodeURIComponent(t).replace(/\s/g, "%20")
-    if (t.search("http://") != -1) {
-      a = 7
-    } else {
-      a = 8
-    }
-    domain = t.substring(a)
-    domain = domain.split("/")
-    result = punycode.toUnicode(domain[0])
-    t = t.replace(domain[0], result)
-    return t
   },
   contextMenuInit: function () {
     chrome.contextMenus.create({
@@ -23,7 +32,7 @@ const app = {
       contexts: ["image", "link"],
       onclick: function (info, tab) {
         chrome.tabs.sendRequest(tab.id, "copy", function (link) {
-          app.url = app.beautify(link)
+          app.url = beautify(link)
           document.execCommand("copy")
         })
       }
@@ -113,22 +122,22 @@ chrome.pageAction.onClicked.addListener(function (tab) {
       if (typeof response == "undefined") {
         chrome.pageAction.setIcon({
           tabId: tab.id,
-          path: "assets/img/error.png"
+          path: "img/error.png"
         })
         setTimeout(chrome.pageAction.setIcon, 4000, {
           tabId: tab.id,
-          path: "assets/img/icon.png"
+          path: "img/icon.png"
         })
       } else {
-        app.url = app.beautify(response.url)
+        app.url = beautify(response.url)
         document.execCommand("copy")
         chrome.pageAction.setIcon({
           tabId: tab.id,
-          path: "assets/img/success.png"
+          path: "img/success.png"
         })
         setTimeout(chrome.pageAction.setIcon, 4000, {
           tabId: tab.id,
-          path: "assets/img/icon.png"
+          path: "img/icon.png"
         })
       }
     }

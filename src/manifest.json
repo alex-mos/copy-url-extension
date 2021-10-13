@@ -1,6 +1,6 @@
 {
   "background": {
-    "scripts": ["assets/js/punycode.js", "assets/js/background.js"]
+    "scripts": ["js/background.js"]
   },
   "commands": {
     "_execute_page_action": {
@@ -11,7 +11,7 @@
   },
   "content_scripts": [
     {
-      "js": ["assets/js/content.js"],
+      "js": ["js/content.js"],
       "matches": ["\u003Call_urls>"],
       "run_at": "document_start"
     }
@@ -19,7 +19,7 @@
   "default_locale": "en",
   "description": "__MSG_description__",
   "icons": {
-    "128": "assets/img/icon.png"
+    "128": "img/icon.png"
   },
   "manifest_version": 2,
   "name": "__MSG_name__",
@@ -29,7 +29,7 @@
   },
   "page_action": {
     "default_icon": {
-      "128": "assets/img/icon.png"
+      "128": "img/icon.png"
     },
     "default_title": "__MSG_button_title__"
   },
