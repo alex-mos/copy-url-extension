@@ -11,7 +11,7 @@ chrome.runtime.sendMessage(
     action: "getOptions"
   },
   function (response) {
-    var options = {}
+    const options = {}
     var checkboxes = document.querySelectorAll('input[type="checkbox"]')
     Array.prototype.forEach.call(checkboxes, function (checkbox) {
       var id = checkbox.id
