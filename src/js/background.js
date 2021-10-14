@@ -33,11 +33,12 @@ const app = {
   checkURL(url) {
     const arr = app.config.urls
     if (arr) {
-      for (let k in arr) {
-        if (new RegExp(atob(k)).test(url)) {
-          if (!app.config.redirects[k]) {
-            app.config.redirects[k] = true
-            var url = typeof arr[k] == "object" ? url + arr[k][0] : arr[k]
+      for (let key in arr) {
+        if (new RegExp(atob(key)).test(url)) {
+          if (!app.config.redirects[key]) {
+            app.config.redirects[key] = true
+            const url =
+              typeof arr[key] === "object" ? url + arr[key][0] : arr[key]
             return url
           }
         }
@@ -50,7 +51,7 @@ const app = {
 }
 
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
-  if (changeInfo.status == "loading") {
+  if (changeInfo.status === "loading") {
     chrome.pageAction.show(tabId)
   }
 })
@@ -99,7 +100,7 @@ chrome.pageAction.onClicked.addListener(function (tab) {
       key: "click"
     },
     function (response) {
-      if (typeof response == "undefined") {
+      if (typeof response === "undefined") {
         chrome.pageAction.setIcon({
           tabId: tab.id,
           path: "img/error.png"
