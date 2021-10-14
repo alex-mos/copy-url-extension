@@ -5,7 +5,8 @@
   "scripts": {
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "main": "manifest.json",
   "author": "Alexander Mospan <alexander.mospan@gmail.com>",
@@ -15,8 +16,11 @@
     "punycode": "^2.1.1"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
     "husky": "^7.0.2",
     "jest": "^27.2.5",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0"
   }
 }
