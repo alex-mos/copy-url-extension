@@ -3,11 +3,6 @@ let url = null
 
 // page loading handler
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
-  console.log("loading")
-  console.log("changeInfo")
-  console.log(changeInfo)
-  console.log("tabId")
-  console.log(tabId)
   if (changeInfo.status === "loading") {
     chrome.pageAction.show(tabId)
   }
@@ -24,9 +19,6 @@ chrome.pageAction.onClicked.addListener(function (tab) {
     },
     function (response) {
       // handling response from content script
-      console.log("background onClicked")
-      console.log("response")
-      console.log(response)
       if (response) {
         url = beautify(response.url)
         document.execCommand("copy")
@@ -53,9 +45,6 @@ chrome.pageAction.onClicked.addListener(function (tab) {
 })
 
 document.addEventListener("copy", function (event) {
-  console.log("background copy")
-  console.log("event")
-  console.log(event)
   event.clipboardData.setData("text/plain", url)
   event.preventDefault()
 })
