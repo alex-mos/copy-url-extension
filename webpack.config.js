@@ -2,9 +2,9 @@ const CopyPlugin = require("copy-webpack-plugin")
 const path = require("path")
 
 module.exports = {
-  entry: "./src/js/background.js",
-  mode: "development", // 'production',
+  mode: "production",
   devtool: false,
+  entry: "./src/js/background.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/background.js"

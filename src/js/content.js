@@ -13,24 +13,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   }
 })
 
-document.addEventListener(
-  "contextmenu",
-  function (event) {
-    let node = event.target
-    while (node && node.nodeName.toLowerCase() !== "a") {
-      if (
-        node.nodeName.toLowerCase() === "img" &&
-        node.parentNode.nodeName.toLowerCase() !== "a"
-      ) {
-        break
-      }
-      node = node.parentNode
-    }
-    app.target = node
-  },
-  true
-)
-
 chrome.extension.onRequest.addListener(function (request, sender, callback) {
   if (request === "copy") {
     callback(app.target.href ? app.target.href : app.target.src)

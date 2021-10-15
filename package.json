@@ -6,7 +6,8 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "test": "jest",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "main": "manifest.json",
   "author": "Alexander Mospan <alexander.mospan@gmail.com>",
