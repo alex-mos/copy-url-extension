@@ -11,7 +11,17 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "src", to: "" }]
+      patterns: [
+        {
+          from: "src",
+          to: "",
+          globOptions: {
+            dot: true,
+            gitignore: true,
+            ignore: ["**/js/utils/**"]
+          }
+        }
+      ]
     })
   ]
 }
