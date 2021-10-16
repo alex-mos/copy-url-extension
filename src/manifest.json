@@ -22,7 +22,7 @@
     },
     "default_title": "__MSG_button_title__"
   },
-  "permissions": ["clipboardWrite", "tabs"],
+  "permissions": ["clipboardWrite", "activeTab"],
   "short_name": "copyurl",
   "version": "1.0.0"
 }
