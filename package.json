@@ -1,7 +1,7 @@
 {
   "name": "copyurl",
   "version": "1.0.0",
-  "description": "Extension for the correct copying of URL address. COPY URL allows to copy URL addresses containing characters of national alphabets.",
+  "description": "Extension for the correct copying of URL address. Copy URL allows to copy URL addresses containing characters of national alphabets.",
   "scripts": {
     "prettier": "prettier --write .",
     "prepare": "husky install",

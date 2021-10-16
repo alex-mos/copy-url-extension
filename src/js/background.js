@@ -26,20 +26,16 @@ chrome.pageAction.onClicked.addListener(function (tab) {
           tabId: tab.id,
           path: "img/success.png"
         })
-        setTimeout(chrome.pageAction.setIcon, 4000, {
-          tabId: tab.id,
-          path: "img/icon.png"
-        })
       } else {
         chrome.pageAction.setIcon({
           tabId: tab.id,
           path: "img/error.png"
         })
-        setTimeout(chrome.pageAction.setIcon, 4000, {
-          tabId: tab.id,
-          path: "img/icon.png"
-        })
       }
+      setTimeout(chrome.pageAction.setIcon, 4000, {
+        tabId: tab.id,
+        path: "img/icon.png"
+      })
     }
   )
 })

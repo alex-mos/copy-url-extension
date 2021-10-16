@@ -6,15 +6,12 @@
     "message": "Copy URL"
   },
   "description": {
-    "message": "Extension for the correct copying of URL address. COPY URL allows to copy URL addresses containing characters of national alphabets"
+    "message": "Extension for the correct copying of URL address. Copy URL allows to copy URL addresses containing characters of national alphabets"
   },
   "hide_menu": {
     "message": "Hide context menu item"
   },
   "name": {
     "message": "Copy URL"
-  },
-  "notify_text": {
-    "message": "Do you like the extension? Please leave us a feedback!"
   }
 }
